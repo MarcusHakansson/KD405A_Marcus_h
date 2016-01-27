@@ -26,9 +26,7 @@
 	 
 	 public static int getMinSize(){
 	 return minSize;
-	 
 	 }
-	 
 	 public static int getMaxSize(){
 	 return maxSize;
 	 }

@@ -56,6 +56,11 @@ public class Calculator {
 		operand = 0;
 		operator = "*";
 	}
+	public void delat(){
+		result = operand;
+		operand = 0;
+		operator = "/";
+	}
 	
 	public void equals(){
 		if (operator.equals("*")){
@@ -64,6 +69,8 @@ public class Calculator {
 			result= result - operand;
 		}else if(operator.equals("+")){
 			result= result + operand;
+		}else if(operator.equals("/")){
+			result= result / operand;
 		}
 		operand = 0;
 	}
