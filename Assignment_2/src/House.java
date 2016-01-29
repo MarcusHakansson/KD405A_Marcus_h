@@ -3,10 +3,10 @@
 	 
 	 private int yearBuilt;
 	 private int size;
-	 private static int minSize = 10;
-	 private static int maxSize = 1000;
-	 private static int minYear = 1800;
-	 private static int maxYear = 2015;
+	 private final static int minSize = 10;
+	 private final static int maxSize = 1000;
+	 private final static int minYear = 1800;
+	 private final static int maxYear = 2015;
 	 
 	 
 	 public House(int yearBuilt,int size){
