@@ -113,11 +113,11 @@ public class CalculatorGUI extends JFrame {
 		button_equals.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				myCalculator.equals();
-				int i = myCalculator.getResult();
+				float i = myCalculator.getResult();
 				textArea.setText(String.valueOf(i));
 			}
 		});
-		button_equals.setBounds(99, 294, 237, 47);
+		button_equals.setBounds(182, 294, 154, 47);
 		contentPane.add(button_equals);
 		
 		JButton button_4 = new JButton("4");
@@ -210,5 +210,15 @@ public class CalculatorGUI extends JFrame {
 		});
 		button_7.setBounds(16, 294, 71, 47);
 		contentPane.add(button_7);
+		
+		JButton button_10 = new JButton(",");
+		button_10.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				textArea.append(",");
+				myCalculator.komma();
+			}
+		});
+		button_10.setBounds(99, 294, 71, 47);
+		contentPane.add(button_10);
 	}
 }

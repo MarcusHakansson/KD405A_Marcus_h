@@ -17,11 +17,12 @@ public class HouseGUI extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private House [] myHouses;
 	private int randomYear;
 	private int randomSize;
 	private Random random = new Random();
-	private ArrayList<House> houselist = new ArrayList<House>();
+	private ArrayList<House> houselist = new ArrayList<House>(); //ArrayList
+	private House [] myHouses; //Arraylisten instansieras. 
+	
 
 	
 	/**
@@ -102,7 +103,7 @@ public class HouseGUI extends JFrame {
 		randomYear = random.nextInt(House.getMaxYear() - House.getMinYear() + 1) + House.getMinYear();
 		randomSize = random.nextInt(House.getMaxSize() - House.getMinSize() + 1) + House.getMinSize();
 		
-		houselist.add(new House(randomYear, randomSize));
+		houselist.add(new House(randomYear, randomSize)); //
 		
 		System.out.println(houselist.get(i).getYearBuilt() + "\t" + houselist.get(i).getSize());
 		textArea.append("House " + (i+1) + " is built " + houselist.get(i).getYearBuilt() + " and is " + houselist.get(i).getSize() + " kvm" + "\n");
