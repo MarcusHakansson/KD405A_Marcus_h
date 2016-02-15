@@ -3,8 +3,7 @@ import java.util.ArrayList;
 public class Human {
 
 	private String name;
-	private Dog dog; 
-	private String info;
+	private Dog dog;
 	
 
 	
