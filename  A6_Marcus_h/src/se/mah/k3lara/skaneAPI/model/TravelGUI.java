@@ -129,9 +129,7 @@ public class TravelGUI extends JFrame {
 			searchStations.addAll(Parser.getStationsFromURL(searchField.getText()));
 			for (Station s : searchStations) {
 				resultArea.append(s.getStationName() + " number:" + s.getStationNbr() + "\n");
-
 			}
-
 		}
 	}
 
